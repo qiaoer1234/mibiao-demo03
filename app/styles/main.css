@@ -1,7 +1,7 @@
 /* #region sass vars */
 /* #endregion */
 body {
-  background-color: #f00;
+  background-color: #f7f7f7;
 }
 
 .layui-laypage .layui-laypage-curr .layui-laypage-em {
@@ -21,47 +21,13 @@ body {
 .layui-btn-primary:hover {
   background-color: #3388ff;
   color: #fff !important;
-  border-color: #3388FF;
+  border-color: #018ffe;
 }
 
-.theme-green .layui-btn-primary:hover {
-  background-color: #07cd5a;
-  color: #07cd5a;
-}
-
-.theme-green .column i, .theme-green .column h2, .theme-green .yl_column i, .theme-green .yl_column h2 {
-  color: #07cd5a;
-}
-
-.theme-green .cont-domain_sell ._box1 ._box1-i ._flex-wra ._i:hover p {
-  color: #07cd5a;
-}
-
-.theme-green .tab-title li.active a, .theme-green .tab-title li:hover a, .theme-green .cont-domain_sell ._box1 ._box1-i ._flex-wra ._i:hover ._cir {
-  background-color: #07cd5a;
-}
-
-.theme-green .ajax-submit, .theme-green .buy-btn, .theme-green .selected-list li:hover .buy-btn-selected, .theme-green #nav {
-  background-color: #07cd5a;
-}
-
-.theme-green .navbar li .on, .theme-green .navbar li a:hover {
-  background-color: #3EE36A;
-}
-
-.theme-green .selected-list li:hover .buy-btn-selected, .theme-green .layui-btn-primary:hover {
-  border-color: #07cd5a !important;
-}
-
-.theme-green .cont-alldomain ._box0 ._cates ._sub {
-  color: #07cd5a;
-  border-color: #07cd5a !important;
-}
-
-.theme-green .cont-alldomain ._box0 ._cates ._btn.on {
-  background-color: #07cd5a;
-  color: #fff !important;
-  border-color: #07cd5a;
+.theme-green .head-top {
+  height: 26px;
+  line-height: 26px;
+  border-bottom: #f7f7f7 1px solid;
 }
 
 .cont-alldomain .layui-form-label {
@@ -79,13 +45,13 @@ body {
 }
 
 .cont-alldomain ._box0 ._cates ._sub {
-  border-color: #3388FF;
-  color: #3388FF;
+  border-color: #018ffe;
+  color: #018ffe;
 }
 
 .cont-alldomain ._box0 ._cates ._sub:hover {
-  border-color: #3388FF;
-  color: #3388FF;
+  border-color: #018ffe;
+  color: #018ffe;
 }
 
 .cont-alldomain ._box0 ._cates ._sub,
@@ -421,11 +387,11 @@ body {
 }
 
 .page-domain_sell #jm-head ._a:hover {
-  color: #3388FF;
+  color: #018ffe;
 }
 
 .page-domain_sell #jm-head ._a.on {
-  color: #3388FF;
+  color: #018ffe;
 }
 
 .page-domain_sell #jm-head ._rig button {
@@ -442,8 +408,4 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-}
-
-body {
-  background: #000;
 }

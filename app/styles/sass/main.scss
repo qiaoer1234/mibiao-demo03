@@ -3,9 +3,11 @@
 /* #region sass vars */
 // orange
 $cl-oran: #F90;
-$cl-blue: #3388FF;
+$cl-blue: #018ffe;
 $cl-gray: #F7F7F7;
 $cl-green:#07cd5a;
+$cl-orange: #fe7e00;
+
 // border gray
 $cl-borgray: #e5e5e5;
 $cl-fontgray: #999999;
@@ -18,8 +20,9 @@ $cl-fontgray: #999999;
 //   color: red;
 // }
 body {
-  background-color: #f00;
+  background-color: #f7f7f7;
 }
+
 
 // layui overrides
 .layui-laypage .layui-laypage-curr .layui-laypage-em {
@@ -42,49 +45,11 @@ body {
   border-color: $cl-blue;
 }
 
-.theme-green {
-    .layui-btn-primary:hover {
-      background-color: $cl-green;
-      color: $cl-green;
-    }
-
-    .column,.yl_column{
-      i, h2{
-        color: $cl-green;
-      }
-  }
-  .cont-domain_sell ._box1 ._box1-i ._flex-wra ._i:hover p{
-    color: $cl-green;
-  }
-  .tab-title li.active a, .tab-title li:hover a, .cont-domain_sell ._box1 ._box1-i ._flex-wra ._i:hover ._cir{
-    background-color: $cl-green;
-  }
-  .ajax-submit,.buy-btn, .selected-list li:hover .buy-btn-selected, #nav {
-    background-color: $cl-green;
-  }
-  .navbar li .on, .navbar li a:hover{
-    background-color: #3EE36A;
-  }
-  .selected-list li:hover .buy-btn-selected,.layui-btn-primary:hover{
-    border-color: $cl-green!important;
-  }
-  .cont-alldomain ._box0 ._cates ._sub{
-    color: $cl-green;
-    border-color: $cl-green!important;
-  }
-
-  .cont-alldomain {
-    ._box0 {
-      ._cates {
-        ._btn {
-          &.on{
-            background-color: $cl-green;
-            color: #fff !important;
-            border-color: $cl-green;
-          }
-        }
-      }
-    }
+.theme-green{
+  .head-top{
+    height: 26px;
+    line-height: 26px;
+    border-bottom: #f7f7f7 1px solid;
   }
 }
 
@@ -508,6 +473,3 @@ body {
 }
 
 // #endregion app css
-body{
-  background: #000;
-}
