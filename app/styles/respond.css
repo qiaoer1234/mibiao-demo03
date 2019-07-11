@@ -1,0 +1,8 @@
+
+
+@media screen and (min-width: 768px){
+	.nav{max-height: 100px;}
+	.nav .nav-list button{display: none;}
+	.nav .layui-nav{width: auto; position: absolute; top: 0; padding: 0 5px; border-radius: 0; margin: 0;}
+	.nav .layui-nav .layui-nav-item{display: inline-block; margin:0 40px; line-height: 100px;}
+}  
