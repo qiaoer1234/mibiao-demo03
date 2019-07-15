@@ -25,6 +25,10 @@
   margin-left: 20px;
 }
 
+.mr {
+  margin-right: 20px;
+}
+
 .mb {
   margin-bottom: 20px;
 }
@@ -203,10 +207,6 @@
   color: #F90;
 }
 
-.m-table {
-  margin-bottom: 40px;
-}
-
 .m-table thead th {
   text-align: center;
   font-weight: bold;
@@ -221,7 +221,7 @@
 }
 
 .m-table ._tabs ._tab._on {
-  color: #3388FF;
+  color: #018ffe;
 }
 
 .m-table ._table {
@@ -229,7 +229,7 @@
 }
 
 .m-table ._table tbody tr td:first-child {
-  color: #3388FF;
+  color: #018ffe;
 }
 
 .m-table ._table tbody tr td:nth-child(3) {
