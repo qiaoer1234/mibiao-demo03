@@ -8,6 +8,10 @@
   overflow: hidden;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
 /* useful css class */
 .tc {
   text-align: center;
@@ -137,6 +141,10 @@
 
 .font18 {
   font-size: 18px;
+}
+
+.font28 {
+  font-size: 28px;
 }
 
 .fl {
