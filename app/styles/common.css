@@ -33,6 +33,10 @@
   margin-right: 20px;
 }
 
+.mr50 {
+  margin-right: 50px;
+}
+
 .mb {
   margin-bottom: 20px;
 }
@@ -199,7 +203,6 @@
 /* #endregion */
 /* #region app common css */
 .u-box {
-  padding: 20px;
   background-color: #fff;
 }
 
@@ -212,35 +215,6 @@
 }
 
 .cl-oran {
-  color: #F90;
-}
-
-.m-table thead th {
-  text-align: center;
-  font-weight: bold;
-}
-
-.m-table .layui-table thead tr {
-  background: none;
-}
-
-.m-table ._tabs ._tab {
-  margin-left: 20px;
-}
-
-.m-table ._tabs ._tab._on {
-  color: #018ffe;
-}
-
-.m-table ._table {
-  margin-top: 20px;
-}
-
-.m-table ._table tbody tr td:first-child {
-  color: #018ffe;
-}
-
-.m-table ._table tbody tr td:nth-child(3) {
   color: #F90;
 }
 
