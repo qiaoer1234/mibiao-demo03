@@ -23,60 +23,35 @@
   <!--    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1233831_qg93zuj95cl.css">-->
 </head>
 <body class="theme-green">
-<!--头部-->
-<div class="head-top">
-  <div class="container">
-    <p class="fl font12 cl-gray">您好，欢迎光临聚米网域名米表！</p>
-    <span class="fr i-b _span1"><a>
-            <i class="iconfont icon-youxiang- fl"></i>
-            <p class="fl font12 cl-gray">admin@juming.com</p>
-          </a></span>
-    <span class="fr i-b _span2 mr"><a href="javascript:;">
-            <i class="iconfont icon-QQ fl"></i>
-            <p class="fl font12 cl-gray" >4009972996</p>
-          </a></span>
-
-  </div>
-</div>
-
 <div class="layout" style="background-color: #fff">
   <div class="container">
     <div id="jm-head">
       <div class="head-box" >
         <div id="logo" class=""><a href="index.html" title="米表"><img src="./images/logo.png" alt="logo" title="米表" class="fl"></a></div>
-        <div class="fr ">
+        <div class="fr">
           <form action="/hao/" method="get" id="search-form" target="_blank">
             <div class="head-search fl">
-              <i class="iconfont icon-xiazai17"></i>
-              <input class="search-box fl domain" type="text" placeholder="请输入域名关键字" name="cha_ym"
+              <i class="iconfont icon-xiazai17 _i"></i>
+              <input class="search-box fl domain" type="text" placeholder="" name="cha_ym"
                      style="display: block;">
-              <div class="head-sec fl">
-                <span>查域名</span>
-                <div class="nav-down">
-                  <ul>
-                    <li onclick="changeSubmitUrl('domain','search-form',this,'/hao/');">查域名</li>
-                    <li onclick="changeSubmitUrl('whois','search-form',this,'http://whois.juming.com/');">查whois</li>
-                  </ul>
-                </div>
-              </div>
             </div>
-
-            <button class="ajax-submit fl" type="submit">搜索</button>
           </form>
         </div>
         <!--导航-->
-        <div id="nav" class="fl">
+        <div id="nav" class="fr">
           <div class="navbar">
             <ul>
-              <li class="fl"><a href="index.html" class="on">网站首页</a></li>
-              <li class="fl"><a href="demo.html" target="_self">所有域名</a></li>
-              <li class="fl"><a href="sales.html" target="_self">推荐域名</a></li>
-              <li class="fl"><a href="process.html" target="_self">新闻资讯</a></li>
-              <li class="fl"><a href="help.html" target="_self">联系我们</a></li>
+              <li class="fl"><a href="index.html">网站首页</a></li>
+              <li class="fl"><a href="all_domain.html" target="_self">所有域名</a></li>
+              <li class="fl"><a href="good_domain.html" target="_self" class="on">推荐域名</a></li>
+              <li class="fl"><a href="news_list.html" target="_self">新闻资讯</a></li>
+              <li class="fl"><a href="contactus.html" target="_self"  >联系我们</a></li>
               <div class="clear"></div>
             </ul>
           </div>
         </div>
+
+
       </div>
 
     </div>
@@ -87,70 +62,84 @@
 <div class="w1200 auto0 cont-gooddomain">
   <div class="layui-row">
 				<span class="layui-breadcrumb fl height-large mt" lay-separator=">" style="visibility: visible;">
-          <i class="iconfont icon-shouye fl _i-blue font16"></i>
-				  <a href="/">当前位置：</a><span lay-separator="">&gt;</span>
+          <i class="iconfont icon-shouye-copy fl _i-blue font16"></i>
+				  <a href="/">当前位置:</a><span lay-separator="">&gt;</span>
 				  <a href="/">首页</a><span lay-separator="">&gt;</span>
 				  <a><cite>推荐域名</cite></a>
 				</span>
   </div>
     <div class="m-table mt u-box">
-      <div class="_tabs">
-        <a class="_tab _on" href="javascript:void(0)">默认排序</a>
-        <a class="_tab" href="javascript:void(0)">按长度排序</a>
-        <a class="_tab" href="javascript:void(0)">按价格排序</a>
+      <div class="_tabs fl">
+        <a class="_tab fl mr" href="javascript:void(0)">默认排序</a>
+        <form class="layui-form fl" action="">
+          <input type="checkbox" name="" title="按长度排序" lay-skin="primary">
+          <input type="checkbox" name="" title="按价格排序" lay-skin="primary">
+        </form>
       </div>
-      <table class="layui-table tc _table" lay-skin="nob">
-        <colgroup>
-          <col width="150">
-          <col width="100">
-          <col width="150">
-          <col>
-          <col width="100">
-          <col width="100">
-        </colgroup>
-        <thead>
-          <tr>
-            <th>域名</th>
-            <th>长度</th>
-            <th>标价（元）</th>
-            <th>简介</th>
-            <th>注册商</th>
-            <th>操作</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>chuangkelai.com</td>
-            <td>29</td>
-            <td>¥100.00</td>
-            <td>江苏开，ABBBB3型精品</td>
-            <td>聚名</td>
-            <td>
-              <a class="layui-btn layui-btn-primary _btn ">查看详情</a>
-            </td>
-          </tr>
-          <tr>
-            <td>jinianri.com.cn</td>
-            <td>28</td>
-            <td>¥100.00</td>
-            <td>独立备案 360 QQ 微信均无拦截</td>
-            <td>阿里云</td>
-            <td>
-              <a class="layui-btn layui-btn-primary _btn ">查看详情</a>
-            </td>
-          </tr>
-          <tr>
-            <td>test2.wapcms.cc</td>
-            <td>27</td>
-            <td>¥100.00</td>
-            <td>高pr精品老域名</td>
-            <td>新网</td>
-            <td>
-              <a class="layui-btn layui-btn-primary _btn ">查看详情</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="layui-table w100 _tabbox" lay-skin="nob">
+        <ul class="w100 _table">
+          <li class="_li"><a href="javascript:void(0)" class="cl-gray">
+          <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+          <p class="_1 font12 ellipsis">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+          <div class="_2 font12"><p class="_2-1">长度：5 </p><p class="_2-2"> 注册商：阿里云 </p></div>
+          <p class="_3">价格：<font class="bold">￥100</font></p>
+        </a></li>
+          <li class="_li"><a href="javascript:void(0)" class="cl-gray">
+            <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+            <p class="_1 font12 ellipsis">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+            <div class="_2 font12"><p class="_2-1">长度：5 </p><p class="_2-2"> 注册商：阿里云 </p></div>
+            <p class="_3">价格：<font class="bold">￥100</font></p>
+          </a></li>
+          <li class="_li"><a href="javascript:void(0)" class="cl-gray">
+            <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+            <p class="_1 font12 ellipsis">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+            <div class="_2 font12"><p class="_2-1">长度：5 </p><p class="_2-2"> 注册商：阿里云 </p></div>
+            <p class="_3">价格：<font class="bold">￥100</font></p>
+          </a></li>
+          <li class="_li"><a href="javascript:void(0)" class="cl-gray">
+            <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+            <p class="_1 font12 ellipsis">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+            <div class="_2 font12"><p class="_2-1">长度：5 </p><p class="_2-2"> 注册商：阿里云 </p></div>
+            <p class="_3">价格：<font class="bold">￥100</font></p>
+          </a></li>
+          <li class="_li"><a href="javascript:void(0)" class="cl-gray">
+            <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+            <p class="_1 font12 ellipsis">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+            <div class="_2 font12"><p class="_2-1">长度：5 </p><p class="_2-2"> 注册商：阿里云 </p></div>
+            <p class="_3">价格：<font class="bold">￥100</font></p>
+          </a></li>
+          <li class="_li"><a href="javascript:void(0)" class="cl-gray">
+            <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+            <p class="_1 font12 ellipsis">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+            <div class="_2 font12"><p class="_2-1">长度：5 </p><p class="_2-2"> 注册商：阿里云 </p></div>
+            <p class="_3">价格：<font class="bold">￥100</font></p>
+          </a></li>
+          <li class="_li"><a href="javascript:void(0)" class="cl-gray">
+            <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+            <p class="_1 font12 ellipsis">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+            <div class="_2 font12"><p class="_2-1">长度：5 </p><p class="_2-2"> 注册商：阿里云 </p></div>
+            <p class="_3">价格：<font class="bold">￥100</font></p>
+          </a></li>
+          <li class="_li"><a href="javascript:void(0)" class="cl-gray">
+            <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+            <p class="_1 font12 ellipsis">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+            <div class="_2 font12"><p class="_2-1">长度：5 </p><p class="_2-2"> 注册商：阿里云 </p></div>
+            <p class="_3">价格：<font class="bold">￥100</font></p>
+          </a></li>
+          <li class="_li"><a href="javascript:void(0)" class="cl-gray">
+            <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+            <p class="_1 font12 ellipsis">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+            <div class="_2 font12"><p class="_2-1">长度：5 </p><p class="_2-2"> 注册商：阿里云 </p></div>
+            <p class="_3">价格：<font class="bold">￥100</font></p>
+          </a></li>
+          <li class="_li"><a href="javascript:void(0)" class="cl-gray">
+            <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+            <p class="_1 font12 ellipsis">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+            <div class="_2 font12"><p class="_2-1">长度：5 </p><p class="_2-2"> 注册商：阿里云 </p></div>
+            <p class="_3">价格：<font class="bold">￥100</font></p>
+          </a></li>
+        </ul>
+      </div>
       <div class="tc m-page">
         <div class="layui-box layui-laypage layui-laypage-default mt tc"><a href="javascript:;"
             class="layui-laypage-prev layui-disabled" data-page="0">上一页</a><span class="layui-laypage-curr"><em
@@ -164,85 +153,36 @@
 
   <!--#endregion content结束-->
 
-<!--    底部开始-->
-<footer class="fl mt20">
+<!--友情链接-->
+<div class="yl_col mt30">
   <div class="container">
-    <!--  友情链接 -->
-    <div class="_foot fl">
-      <ul class="_footul">
-        <p class="fl color_9 font12">友情链接:</p>
-        <li><a href="javascript:;">聚名网</a></li>
-        <li><a href="javascript:;">金米网</a></li>
-        <li><a href="javascript:;">玩米网</a></li>
-        <li><a href="javascript:;">Namepre</a></li>
-        <li><a href="javascript:;">麦宝新品</a></li>
-        <li><a href="javascript:;">地瓜建站</a></li>
-        <li><a href="javascript:;">域铺</a></li>
-        <li><a href="javascript:;">阿里云</a></li>
-        <li><a href="javascript:;">聚名科技</a></li>
-        <div class="clear"></div>
-      </ul>
-    </div>
-    <p>版权所有：www.Juming.Com　备案号：皖ICP备12013812号 皖公网安备 34010302000199号</p>
-    <p>Copyright @ 2008-2019 聚名网 Limited, All Rights Reserved</p>
+    <h2 class="fl">友情链接:</h2>
+    <ul class="yl_list fl">
+      <li><a href="javascript:;">聚名网</a></li>
+      <li><a href="javascript:;">金米网</a></li>
+      <li><a href="javascript:;">玩米网</a></li>
+      <li><a href="javascript:;">Namepre</a></li>
+      <li><a href="javascript:;">麦宝新品</a></li>
+      <li><a href="javascript:;">地瓜建站</a></li>
+      <li><a href="javascript:;">域铺</a></li>
+      <li><a href="javascript:;">阿里云</a></li>
+      <li><a href="javascript:;">聚名科技</a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--#endregion content结束-->
+<!--    底部开始-->
+<footer class="fl">
+  <div class="container">
+    <p>版权所有：www.Juming.Com　备案号：皖ICP备12013812号 皖公网安备 34010302000199号 Copyright @ 2008-2019 聚名网 Limited, All Rights Reserved</p>
     <p class="mt20">本站由 聚米网 www.jumi.com 强力驱动 <a href="javascript:;">米表管理入口</a> <a href="javascript:;">备案查询</a> <a
       href="javascript:;">网站建设</a> <a href="javascript:;">查看手机版</a> </p>
   </div>
 </footer>
 </div>
 
-  <!--右侧悬浮框-->
-  <div id="toolbar" class="toolbar">
-    <div class="to-comm comm1" title="">
-      <i class="iconfont icon-QQ"></i>
-      <a class="kefu1" href="http://wpa.qq.com/msgrd?v=3&amp;uin=64956092&amp;site=qq&amp;menu=yes"
-        target="_blank">在线QQ：64956092</a>
-    </div>
-    <div class="to-comm comm2" title="">
-      <i class="iconfont icon-weixin-copy"></i>
-      <a class="kefu2" href="#" target="_blank">微信:15154837418</a>
-    </div>
-    <div class="to-comm comm3" title="">
-      <i class="iconfont icon-Telephone-copy"></i>
-      <a class="kefu2" href="#" target="_blank">手机：1255646848</a>
-    </div>
-    <div class="to-comm comm4" title="">
-      <i class="iconfont icon-youxiang1"></i>
-      <a class="kefu2" href="#" target="_blank">手机：1255646848</a>
-    </div>
 
-    <div id="to-top" title="返回顶部" style="display: none;">
-      <i class="iconfont icon-icon3"></i>
-    </div>
-  </div>
-
-
-  <script>
-    $('.tab-title li').mousemove(function () {
-      $(this).addClass('active').siblings('li').removeClass('active');
-      var dijige = $(this).index();
-      //alert(dijige);
-      $(this).closest('.tab_box').find('.tab-item').eq(dijige).show().siblings('.tab-item').hide();
-    });
-    $(window).scroll(function () {
-      if ($(this).scrollTop() >= 200) {
-        $("#to-top").fadeIn();
-      }
-      if ($(this).scrollTop() < 200) {
-        $("#to-top").fadeOut();
-      }
-    });
-
-    $("#to-top").click(function () {
-      $("body,html").animate({
-        scrollTop: 0
-      }, 500)
-    });
-
-  </script>
-  <!-- build:js scripts/vendor.js -->
-  <!-- endbuild -->
-  <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
   <script>
     $(function () {

@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="./scripts/layui/css/layui.css" />
   <link rel="stylesheet" href="./styles/swiper.min.css">
   <link rel="stylesheet" href="./styles/iconfont/iconfont.css">
+  <link rel="stylesheet" href="./styles/iconfont2/iconfont.css">
   <link rel="stylesheet" type="text/css" href="./styles/animate.css" />
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/common.css">
@@ -21,56 +22,21 @@
   <script type="text/javascript" src="./scripts/wow.min.js"></script>
   <!--    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1233831_qg93zuj95cl.css">-->
 </head>
-
 <body class="theme-green">
-<!--头部-->
-<div class="head-top">
-  <div class="container">
-    <p class="fl font12 cl-gray">您好，欢迎光临聚米网域名米表！</p>
-    <span class="fr i-b _span1"><a>
-            <i class="iconfont icon-youxiang- fl"></i>
-            <p class="fl font12 cl-gray">admin@juming.com</p>
-          </a></span>
-    <span class="fr i-b _span2 mr"><a href="javascript:;">
-            <i class="iconfont icon-QQ fl"></i>
-            <p class="fl font12 cl-gray" >4009972996</p>
-          </a></span>
-  </div>
-</div>
-<div class="layout bg-white">
+<div class="layout" style="background-color: #fff">
   <div class="container">
     <div id="jm-head">
       <div class="head-box" >
         <div id="logo" class=""><a href="index.html" title="米表"><img src="./images/logo.png" alt="logo" title="米表" class="fl"></a></div>
-        <div class="fr ">
-          <form action="/hao/" method="get" id="search-form" target="_blank">
-            <div class="head-search fl">
-              <i class="iconfont icon-xiazai17"></i>
-              <input class="search-box fl domain" type="text" placeholder="请输入域名关键字" name="cha_ym"
-                     style="display: block;">
-              <div class="head-sec fl">
-                <span>查域名</span>
-                <div class="nav-down">
-                  <ul>
-                    <li onclick="changeSubmitUrl('domain','search-form',this,'/hao/');">查域名</li>
-                    <li onclick="changeSubmitUrl('whois','search-form',this,'http://whois.juming.com/');">查whois</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <button class="ajax-submit fl" type="submit">搜索</button>
-          </form>
-        </div>
         <!--导航-->
-        <div id="nav" class="fl">
+        <div id="nav" class="fr">
           <div class="navbar">
             <ul>
-              <li class="fl"><a href="index.html" >网站首页</a></li>
+              <li class="fl"><a href="index.html">网站首页</a></li>
               <li class="fl"><a href="all_domain.html" target="_self">所有域名</a></li>
               <li class="fl"><a href="good_domain.html" target="_self">推荐域名</a></li>
               <li class="fl"><a href="news_list.html" target="_self" class="on">新闻资讯</a></li>
-              <li class="fl"><a href="contactus.html" target="_self">联系我们</a></li>
+              <li class="fl"><a href="contactus.html" target="_self"  >联系我们</a></li>
               <div class="clear"></div>
             </ul>
           </div>
@@ -82,14 +48,14 @@
 </div>
 
 
+
 <div class="w1200 auto0 cont-newsdetail">
   <div class="layui-row">
 				<span class="layui-breadcrumb fl height-large mt" lay-separator=">" style="visibility: visible;">
-          <i class="iconfont icon-shouye fl _i-blue font16"></i>
+          <i class="iconfont icon-shouye-copy fl _i-blue font16"></i>
 				  <a href="/">当前位置：</a><span lay-separator="">&gt;</span>
 				  <a href="/">首页</a><span lay-separator="">&gt;</span>
-				  <a href="/">新闻资讯</a><span lay-separator="">&gt;</span>
-				  <a><cite>新闻详情</cite></a>
+				  <a><cite>新闻资讯</cite></a>
 				</span>
   </div>
     <div class="_box0 mt b-b u-box">
@@ -98,8 +64,6 @@
       </div>
       <div class="mt font12 cl-gray tc">
         发表时间：2016年6月14日 浏览量：70
-      </div>
-      <div class="_line mt30" style="">
       </div>
       <div class="_cont mt30 font14" style="color: #666;line-height: 2">
         4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿个，年度新增1454万个，我国域名保有量达5030万个，居世界第二。
@@ -123,43 +87,46 @@
     </div>
 
     <div class="_box1 clearfix">
-      <div class="_line" style=""></div>
       <a class="fl block b-b _l cl-gray">
+        <i class="iconfont icon-iconset0415 i-b"></i>
         <span class="ellipsis">
           上一条：全球域名报告发布 中文域名继续领跑全球多语种域名
         </span>
       </a>
-      <a class="fl block b-b _r cl-gray">
+      <a class="fr block b-b _r cl-gray">
         <span class="ellipsis">
           下一条：全球域名报告发布 中文域名继续领跑全球多语种域名
         </span>
+        <i class="iconfont icon-iconset04151"></i>
+
       </a>
     </div>
   </div>
 
   <!--#endregion content结束-->
-
-<!--    底部开始-->
-<footer class="fl mt20">
+<!--友情链接-->
+<div class="yl_col mt30">
   <div class="container">
-    <!--  友情链接 -->
-    <div class="_foot fl">
-      <ul class="_footul">
-        <p class="fl color_9 font12">友情链接:</p>
-        <li><a href="javascript:;">聚名网</a></li>
-        <li><a href="javascript:;">金米网</a></li>
-        <li><a href="javascript:;">玩米网</a></li>
-        <li><a href="javascript:;">Namepre</a></li>
-        <li><a href="javascript:;">麦宝新品</a></li>
-        <li><a href="javascript:;">地瓜建站</a></li>
-        <li><a href="javascript:;">域铺</a></li>
-        <li><a href="javascript:;">阿里云</a></li>
-        <li><a href="javascript:;">聚名科技</a></li>
-        <div class="clear"></div>
-      </ul>
-    </div>
-    <p>版权所有：www.Juming.Com　备案号：皖ICP备12013812号 皖公网安备 34010302000199号</p>
-    <p>Copyright @ 2008-2019 聚名网 Limited, All Rights Reserved</p>
+    <h2 class="fl">友情链接:</h2>
+    <ul class="yl_list fl">
+      <li><a href="javascript:;">聚名网</a></li>
+      <li><a href="javascript:;">金米网</a></li>
+      <li><a href="javascript:;">玩米网</a></li>
+      <li><a href="javascript:;">Namepre</a></li>
+      <li><a href="javascript:;">麦宝新品</a></li>
+      <li><a href="javascript:;">地瓜建站</a></li>
+      <li><a href="javascript:;">域铺</a></li>
+      <li><a href="javascript:;">阿里云</a></li>
+      <li><a href="javascript:;">聚名科技</a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--#endregion content结束-->
+<!--    底部开始-->
+<footer class="fl">
+  <div class="container">
+    <p>版权所有：www.Juming.Com　备案号：皖ICP备12013812号 皖公网安备 34010302000199号 Copyright @ 2008-2019 聚名网 Limited, All Rights Reserved</p>
     <p class="mt20">本站由 聚米网 www.jumi.com 强力驱动 <a href="javascript:;">米表管理入口</a> <a href="javascript:;">备案查询</a> <a
       href="javascript:;">网站建设</a> <a href="javascript:;">查看手机版</a> </p>
   </div>

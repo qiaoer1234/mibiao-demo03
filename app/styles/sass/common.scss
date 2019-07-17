@@ -29,6 +29,9 @@
 .mr{
   margin-right: 20px;
 }
+.mr50{
+  margin-right: 50px;
+}
 .mb{
   margin-bottom: 20px;
 }
@@ -177,7 +180,6 @@ $cl-fontgray: #999999;
 
 /* #region app common css */
 .u-box{
-  padding: 20px;
   background-color: #fff;
 }
 
@@ -193,42 +195,5 @@ $cl-fontgray: #999999;
 
 // modules
 // domain table
-.m-table {
-  //margin-bottom: 40px;
-
-  // overrides
-  thead th {
-    text-align: center;
-    font-weight: bold;
-  }
-
-  .layui-table thead tr {
-    background: none;
-  }
-
-  ._tabs {
-    ._tab {
-      &._on {
-        color: $cl-blue;
-      }
-
-      margin-left: 20px;
-    }
-  }
-
-  ._table {
-    margin-top: 20px;
-
-    tbody tr {
-      td:first-child {
-        color: $cl-blue;
-      }
-
-      td:nth-child(3) {
-        color: $cl-oran;
-      }
-    }
-  }
-}
 
 /* #endregion app css */

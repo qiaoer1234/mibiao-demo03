@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="./scripts/layui/css/layui.css" />
   <link rel="stylesheet" href="./styles/swiper.min.css">
   <link rel="stylesheet" href="./styles/iconfont/iconfont.css">
+  <link rel="stylesheet" href="./styles/iconfont2/iconfont.css">
   <link rel="stylesheet" type="text/css" href="./styles/animate.css" />
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/common.css">
@@ -21,56 +22,21 @@
   <script type="text/javascript" src="./scripts/wow.min.js"></script>
   <!--    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1233831_qg93zuj95cl.css">-->
 </head>
-
 <body class="theme-green">
-<!--头部-->
-<div class="head-top">
-  <div class="container">
-    <p class="fl font12 cl-gray">您好，欢迎光临聚米网域名米表！</p>
-    <span class="fr i-b _span1"><a>
-            <i class="iconfont icon-youxiang- fl"></i>
-            <p class="fl font12 cl-gray">admin@juming.com</p>
-          </a></span>
-    <span class="fr i-b _span2 mr"><a href="javascript:;">
-            <i class="iconfont icon-QQ fl"></i>
-            <p class="fl font12 cl-gray" >4009972996</p>
-          </a></span>
-  </div>
-</div>
-<div class="layout bg-white">
+<div class="layout" style="background-color: #fff">
   <div class="container">
     <div id="jm-head">
       <div class="head-box" >
         <div id="logo" class=""><a href="index.html" title="米表"><img src="./images/logo.png" alt="logo" title="米表" class="fl"></a></div>
-        <div class="fr ">
-          <form action="/hao/" method="get" id="search-form" target="_blank">
-            <div class="head-search fl">
-              <i class="iconfont icon-xiazai17"></i>
-              <input class="search-box fl domain" type="text" placeholder="请输入域名关键字" name="cha_ym"
-                     style="display: block;">
-              <div class="head-sec fl">
-                <span>查域名</span>
-                <div class="nav-down">
-                  <ul>
-                    <li onclick="changeSubmitUrl('domain','search-form',this,'/hao/');">查域名</li>
-                    <li onclick="changeSubmitUrl('whois','search-form',this,'http://whois.juming.com/');">查whois</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <button class="ajax-submit fl" type="submit">搜索</button>
-          </form>
-        </div>
         <!--导航-->
-        <div id="nav" class="fl">
+        <div id="nav" class="fr">
           <div class="navbar">
             <ul>
               <li class="fl"><a href="index.html">网站首页</a></li>
               <li class="fl"><a href="all_domain.html" target="_self">所有域名</a></li>
               <li class="fl"><a href="good_domain.html" target="_self">推荐域名</a></li>
               <li class="fl"><a href="news_list.html" target="_self" class="on">新闻资讯</a></li>
-              <li class="fl"><a href="contactus.html" target="_self">联系我们</a></li>
+              <li class="fl"><a href="contactus.html" target="_self"  >联系我们</a></li>
               <div class="clear"></div>
             </ul>
           </div>
@@ -81,46 +47,76 @@
   </div>
 </div>
 
+
   <div class="w1200 auto0 cont-newslist">
     <div class="layui-row">
 				<span class="layui-breadcrumb fl height-large mt" lay-separator=">" style="visibility: visible;">
-          <i class="iconfont icon-shouye fl _i-blue font16"></i>
+          <i class="iconfont icon-shouye-copy fl _i-blue font16"></i>
 				  <a href="/">当前位置：</a><span lay-separator="">&gt;</span>
 				  <a href="/">首页</a><span lay-separator="">&gt;</span>
 				  <a><cite>新闻资讯</cite></a>
 				</span>
     </div>
     <div class="_box0 mt b-b u-box">
+      <div class="column">
+        <h2 class="fl">新闻资讯</h2>
+      </div>
       <div class="news-item">
         <ul class="news-list clearfix">
           <li><a href="./news_detail.html" class="_a">
-            <img src="http://placehold.jp/99ccff/003366/168x120.png" alt="新闻标题图" class="img-responsive fl mr">
               <!-- <p class="news-time ">2019年6月12日</p> -->
               <p class="news-tit ellipsis">全球域名报告发布 中文域名继续领跑</p>
               <p class="news-dec">4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿个</p>
-              <div class="clearfix mt1">
-                <p class="news-time fl">发布时间：2019年6月12日</p>
-                <button type="button" class="layui-btn layui-btn-primary _btn fr cl-gray">查看详情+</button>
+              <div class="clearfix">
+                <p class="news-time fl">2019-07-12</p>
+                <i class="iconfont icon-xiangyoujiantou fr cl-gray font16 mt"></i>
               </div>
             </a></li>
           <li><a href="./news_detail.html" class="_a">
-            <img src="http://placehold.jp/99ccff/003366/168x120.png" alt="新闻标题图" class="img-responsive fl mr">
+            <!-- <p class="news-time ">2019年6月12日</p> -->
             <p class="news-tit ellipsis">全球域名报告发布 中文域名继续领跑</p>
             <p class="news-dec">4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿个</p>
-            <div class="clearfix mt1">
-              <p class="news-time fl">发布时间：2019年6月12日</p>
-              <button type="button" class="layui-btn layui-btn-primary _btn fr cl-gray">查看详情+</button>
+            <div class="clearfix">
+              <p class="news-time fl">2019-07-12</p>
+              <i class="iconfont icon-xiangyoujiantou fr cl-gray font16 mt"></i>
             </div>
           </a></li>
           <li><a href="./news_detail.html" class="_a">
-            <img src="http://placehold.jp/99ccff/003366/168x120.png" alt="新闻标题图" class="img-responsive fl mr">
-              <p class="news-tit ellipsis">全球域名报告发布 中文域名继续领跑</p>
-              <p class="news-dec">4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿个</p>
-              <div class="clearfix mt1">
-                <p class="news-time fl">发布时间：2019年6月12日</p>
-                <button type="button" class="layui-btn layui-btn-primary _btn fr cl-gray">查看详情+</button>
-              </div>
-            </a></li>
+            <!-- <p class="news-time ">2019年6月12日</p> -->
+            <p class="news-tit ellipsis">全球域名报告发布 中文域名继续领跑</p>
+            <p class="news-dec">4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿个</p>
+            <div class="clearfix">
+              <p class="news-time fl">2019-07-12</p>
+              <i class="iconfont icon-xiangyoujiantou fr cl-gray font16 mt"></i>
+            </div>
+          </a></li>
+          <li><a href="./news_detail.html" class="_a">
+            <!-- <p class="news-time ">2019年6月12日</p> -->
+            <p class="news-tit ellipsis">全球域名报告发布 中文域名继续领跑</p>
+            <p class="news-dec">4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿个</p>
+            <div class="clearfix">
+              <p class="news-time fl">2019-07-12</p>
+              <i class="iconfont icon-xiangyoujiantou fr cl-gray font16 mt"></i>
+            </div>
+          </a></li>
+          <li><a href="./news_detail.html" class="_a">
+            <!-- <p class="news-time ">2019年6月12日</p> -->
+            <p class="news-tit ellipsis">全球域名报告发布 中文域名继续领跑</p>
+            <p class="news-dec">4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿个</p>
+            <div class="clearfix">
+              <p class="news-time fl">2019-07-12</p>
+              <i class="iconfont icon-xiangyoujiantou fr cl-gray font16 mt"></i>
+            </div>
+          </a></li>
+          <li><a href="./news_detail.html" class="_a">
+            <!-- <p class="news-time ">2019年6月12日</p> -->
+            <p class="news-tit ellipsis">全球域名报告发布 中文域名继续领跑</p>
+            <p class="news-dec">4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿个</p>
+            <div class="clearfix">
+              <p class="news-time fl">2019-07-12</p>
+              <i class="iconfont icon-xiangyoujiantou fr cl-gray font16 mt"></i>
+            </div>
+          </a></li>
         </ul>
       </div>
     </div>
@@ -137,33 +133,34 @@
   </div>
 
   <!--#endregion content结束-->
-
-  <!--    底部开始-->
-  <footer class="fl mt20">
-    <div class="container">
-      <!--  友情链接 -->
-      <div class="_foot fl">
-        <ul class="_footul">
-          <p class="fl color_9 font12">友情链接:</p>
-          <li><a href="javascript:;">聚名网</a></li>
-          <li><a href="javascript:;">金米网</a></li>
-          <li><a href="javascript:;">玩米网</a></li>
-          <li><a href="javascript:;">Namepre</a></li>
-          <li><a href="javascript:;">麦宝新品</a></li>
-          <li><a href="javascript:;">地瓜建站</a></li>
-          <li><a href="javascript:;">域铺</a></li>
-          <li><a href="javascript:;">阿里云</a></li>
-          <li><a href="javascript:;">聚名科技</a></li>
-          <div class="clear"></div>
-        </ul>
-      </div>
-      <p>版权所有：www.Juming.Com　备案号：皖ICP备12013812号 皖公网安备 34010302000199号</p>
-      <p>Copyright @ 2008-2019 聚名网 Limited, All Rights Reserved</p>
-      <p class="mt20">本站由 聚米网 www.jumi.com 强力驱动 <a href="javascript:;">米表管理入口</a> <a href="javascript:;">备案查询</a> <a
-        href="javascript:;">网站建设</a> <a href="javascript:;">查看手机版</a> </p>
-    </div>
-  </footer>
+<!--友情链接-->
+    <div class="yl_col mt30">
+  <div class="container">
+    <h2 class="fl">友情链接:</h2>
+    <ul class="yl_list fl">
+      <li><a href="javascript:;">聚名网</a></li>
+      <li><a href="javascript:;">金米网</a></li>
+      <li><a href="javascript:;">玩米网</a></li>
+      <li><a href="javascript:;">Namepre</a></li>
+      <li><a href="javascript:;">麦宝新品</a></li>
+      <li><a href="javascript:;">地瓜建站</a></li>
+      <li><a href="javascript:;">域铺</a></li>
+      <li><a href="javascript:;">阿里云</a></li>
+      <li><a href="javascript:;">聚名科技</a></li>
+    </ul>
+    <div class="clear"></div>
   </div>
+</div>
+<!--#endregion content结束-->
+<!--    底部开始-->
+<footer class="fl">
+  <div class="container">
+    <p>版权所有：www.Juming.Com　备案号：皖ICP备12013812号 皖公网安备 34010302000199号 Copyright @ 2008-2019 聚名网 Limited, All Rights Reserved</p>
+    <p class="mt20">本站由 聚米网 www.jumi.com 强力驱动 <a href="javascript:;">米表管理入口</a> <a href="javascript:;">备案查询</a> <a
+      href="javascript:;">网站建设</a> <a href="javascript:;">查看手机版</a> </p>
+  </div>
+</footer>
+</div>
 
   <!--右侧悬浮框-->
   <div id="toolbar" class="toolbar">
