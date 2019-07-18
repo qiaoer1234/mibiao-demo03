@@ -42,8 +42,8 @@
           <div class="navbar">
             <ul>
               <li class="fl"><a href="index.html">网站首页</a></li>
-              <li class="fl"><a href="all_domain.html" target="_self">所有域名</a></li>
-              <li class="fl"><a href="good_domain.html" target="_self" class="on">推荐域名</a></li>
+              <li class="fl"><a href="all_domain.html" target="_self" class="on">所有域名</a></li>
+              <li class="fl"><a href="good_domain.html" target="_self" >推荐域名</a></li>
               <li class="fl"><a href="news_list.html" target="_self">新闻资讯</a></li>
               <li class="fl"><a href="contactus.html" target="_self"  >联系我们</a></li>
               <div class="clear"></div>
@@ -75,10 +75,10 @@
             <label class="layui-form-label">所属行业：</label>
             <div class="layui-input-block">
               <!-- <input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input"> -->
-              <button type="button" class="layui-btn layui-btn-primary _btn ">全部</button>
+              <button type="button" class="layui-btn layui-btn-primary _btn on">全部行业</button>
               <button type="button" class="layui-btn layui-btn-primary _btn ">商标品牌</button>
               <button type="button" class="layui-btn layui-btn-primary _btn ">汽车机械</button>
-              <button type="button" class="layui-btn layui-btn-primary _btn on">婚恋交友</button>
+              <button type="button" class="layui-btn layui-btn-primary _btn ">婚恋交友</button>
               <button type="button" class="layui-btn layui-btn-primary _btn ">政治法律</button>
               <button type="button" class="layui-btn layui-btn-primary _btn ">生活服务</button>
               <button type="button" class="layui-btn layui-btn-primary _btn ">生活服务</button>
@@ -93,30 +93,29 @@
             <label class="layui-form-label">域名类型：</label>
             <div class="layui-input-block">
               <!-- <input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input"> -->
-              <button type="button" class="layui-btn layui-btn-primary _btn ">全部</button>
-              <button type="button" class="layui-btn layui-btn-primary _btn ">四数域名</button>
-              <button type="button" class="layui-btn layui-btn-primary _btn ">五数域名</button>
-              <button type="button" class="layui-btn layui-btn-primary _btn ">六数域名</button>
+<!--          <button type="button" class="layui-btn layui-btn-primary _btn ">全部</button>-->
+              <input type="checkbox" name="" title="全部" lay-skin="primary" checked class="_btn">
+              <input type="checkbox" name="" title="四数域名" lay-skin="primary"  class="_btn">
+              <input type="checkbox" name="" title="五数域名" lay-skin="primary"  class="_btn">
+              <input type="checkbox" name="" title="六数域名" lay-skin="primary"  class="_btn">
             </div>
           </div>
           <div class="layui-form-item">
             <label class="layui-form-label">域名分类：</label>
             <div class="layui-input-block">
-              <!-- <input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input"> -->
-              <button type="button" class="layui-btn layui-btn-primary _btn ">全部</button>
-              <button type="button" class="layui-btn layui-btn-primary _btn ">四数域名</button>
-              <button type="button" class="layui-btn layui-btn-primary _btn ">五数域名</button>
-              <button type="button" class="layui-btn layui-btn-primary _btn ">六数域名</button>
+              <input type="checkbox" name="" title="全部" lay-skin="primary" checked class="_btn">
+              <input type="checkbox" name="" title="商标品牌" lay-skin="primary"  class="_btn">
+              <input type="checkbox" name="" title="生活服务" lay-skin="primary"  class="_btn">
+              <input type="checkbox" name="" title="汽车机械" lay-skin="primary"  class="_btn">
             </div>
           </div>
           <div class="layui-form-item">
             <label class="layui-form-label">域名后缀：</label>
             <div class="layui-input-block">
-              <!-- <input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input"> -->
-              <button type="button" class="layui-btn layui-btn-primary _btn ">全部</button>
-              <button type="button" class="layui-btn layui-btn-primary _btn ">.com</button>
-              <button type="button" class="layui-btn layui-btn-primary _btn ">.cn</button>
-              <button type="button" class="layui-btn layui-btn-primary _btn ">.com.cn</button>
+              <input type="checkbox" name="" title="全部" lay-skin="primary" checked class="_btn">
+              <input type="checkbox" name="" title=".com" lay-skin="primary"  class="_btn">
+              <input type="checkbox" name="" title=".cn" lay-skin="primary"  class="_btn">
+              <input type="checkbox" name="" title=".com.cn" lay-skin="primary"  class="_btn">
             </div>
           </div>
           <div class="layui-form-item">
@@ -190,7 +189,7 @@
           </div>
 
           <div class="layui-form-item mt30">
-            <div class="layui-input-block tc" style="margin-left:0">
+            <div class="layui-input-block" style="margin-left:120px">
               <button class="layui-btn _sub layui-btn-primary" lay-submit lay-filter="formDemo"></i> 搜索</button>
               <button type="reset" class="layui-btn _reset layui-btn-primary"> 重置</button>
             </div>
@@ -310,7 +309,7 @@
       href="javascript:;">网站建设</a> <a href="javascript:;">查看手机版</a> </p>
   </div>
 </footer>
-</div>
+
 
   <script>
     $('.tab-title li').mousemove(function () {

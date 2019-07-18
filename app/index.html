@@ -19,564 +19,163 @@
   <script type="text/javascript" src="./scripts/layui/layui.js"></script>
   <script type="text/javascript" src="./scripts/swiper.min.js"></script>
   <script type="text/javascript" src="./scripts/wow.min.js"></script>
-  <!--    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1233831_qg93zuj95cl.css">-->
+
+  <script type="text/javascript">
+    /*
+     *@method 动画效果调用函数
+     *@param
+     *@path
+     *@author
+     */
+    function browserRedirect() {
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+      var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+      var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+      var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+      var bIsAndroid = sUserAgent.match(/android/i) == "android";
+      var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+      var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+      if (!(/msie [6|7|8|9]/i.test(navigator.userAgent)) && !(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
+        new WOW().init();
+      };
+    };
+
+    // css3动画调用
+    browserRedirect();
+  </script>
+
 </head>
-
 <body class="theme-green">
-    <!--头部-->
-    <div class="head-top">
-      <div class="container">
-        <p class="fl font12 cl-gray">您好，欢迎光临聚米网域名米表！</p>
-        <span class="fr i-b _span1"><a>
-            <i class="iconfont icon-youxiang- fl"></i>
-            <p class="fl font12 cl-gray">admin@juming.com</p>
-          </a></span>
-        <span class="fr i-b _span2 mr"><a href="javascript:;">
-            <i class="iconfont icon-QQ fl"></i>
-            <p class="fl font12 cl-gray" >4009972996</p>
-          </a></span>
+<div class="layout _index re">
+  <div class="ab _1 w100">
+    <div id="jm-head" class="w1200 _2 auto0 wow slideInLeft">
+      <div class="head-box" >
+        <div id="logo" class=""><a href="index.html" title="米表"><img src="./images/logo2.png" alt="logo" title="米表" class="fl"></a></div>
+        <div class="fr _4">
+          <form action="/hao/" method="get" id="search-form" target="_blank">
+            <div class="head-search fl">
+              <i class="iconfont icon-xiazai17 _i"></i>
+              <input class="search-box fl domain" type="text" placeholder="" name="cha_ym"
+                     style="display: block;">
+            </div>
+          </form>
+        </div>
+        <!--导航-->
+        <div id="nav" class="fr _3 wow fadeInUp">
+          <div class="navbar">
+            <ul>
+              <li class="fl"><a href="index.html" class="on">网站首页</a></li>
+              <li class="fl"><a href="all_domain.html" target="_self" >所有域名</a></li>
+              <li class="fl"><a href="good_domain.html" target="_self" >推荐域名</a></li>
+              <li class="fl"><a href="news_list.html" target="_self">新闻资讯</a></li>
+              <li class="fl"><a href="contactus.html" target="_self"  >联系我们</a></li>
+              <div class="clear"></div>
+            </ul>
+          </div>
+        </div>
+
+
       </div>
+
     </div>
-    <div class="layout bg-white">
-    <div class="container">
-      <div id="jm-head">
-        <div class="head-box" >
-          <div id="logo" class=""><a href="index.html" title="米表"><img src="./images/logo.png" alt="logo" title="米表" class="fl"></a></div>
-          <div class="fr ">
-            <form action="/hao/" method="get" id="search-form" target="_blank">
-              <div class="head-search fl">
-                <i class="iconfont icon-xiazai17"></i>
-                <input class="search-box fl domain" type="text" placeholder="请输入域名关键字" name="cha_ym"
-                       style="display: block;">
-                <div class="head-sec fl">
-                  <span>查域名</span>
-                  <div class="nav-down">
-                    <ul>
-                      <li onclick="changeSubmitUrl('domain','search-form',this,'/hao/');">查域名</li>
-                      <li onclick="changeSubmitUrl('whois','search-form',this,'http://whois.juming.com/');">查whois</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+  </div>
 
-              <button class="ajax-submit fl" type="submit">搜索</button>
-            </form>
-          </div>
-          <!--导航-->
-          <div id="nav" class="fl">
-            <div class="navbar">
-              <ul>
-                <li class="fl"><a href="index.html" class="on">网站首页</a></li>
-                <li class="fl"><a href="all_domain.html" target="_self">所有域名</a></li>
-                <li class="fl"><a href="good_domain.html" target="_self">推荐域名</a></li>
-                <li class="fl"><a href="news_list.html" target="_self">新闻资讯</a></li>
-                <li class="fl"><a href="contactus.html" target="_self">联系我们</a></li>
-                <div class="clear"></div>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-      </div>
+<!--banner-->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="../images/index03_01.png" alt="" class="img-responsive">
     </div>
+    <div class="swiper-slide">
+      <img src="../images/index03_01.png" alt="" class="img-responsive">
     </div>
+  </div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next btn-next1"></div>
+  <div class="swiper-button-prev btn-prev1"></div>
+</div>
 
-  <!--content开始-->
-  <div class="layout fl">
-    <div class="container">
+<!--banner-->
+</div>
 
-      <!--     推荐域名-->
-      <div class="yzym_left fl mt20">
-        <div class="column">
-          <h2 class="fl">推荐域名</h2>
-          <a href="#" class="more fr">更多+</a>
-          <div class="clear"></div>
-        </div>
+<!--content开始-->
+  <div class="layout bg-white">
+    <div class="w1200 auto0 _indexbox">
 
-        <div class="yzym-item">
-          <ul class="yzym-list">
-            <li>
-              <p class="u-yuming jm-1b">zzjghj.com</p>
-              <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-              <p class="index-price">¥80000.00</p>
-              <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-            </li>
-            <li>
-              <p class="u-yuming jm-1b">zzjghj.com</p>
-              <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-              <p class="index-price">¥80000.00</p>
-              <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-            </li>
-            <li>
-              <p class="u-yuming jm-1b">zzjghj.com</p>
-              <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-              <p class="index-price">¥80000.00</p>
-              <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-            </li>
-            <li>
-              <p class="u-yuming jm-1b">zzjghj.com</p>
-              <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-              <p class="index-price">¥80000.00</p>
-              <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-            </li>
-            <li>
-              <p class="u-yuming jm-1b">zzjghj.com</p>
-              <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-              <p class="index-price">¥80000.00</p>
-              <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-            </li>
-            <li>
-              <p class="u-yuming jm-1b">zzjghj.com</p>
-              <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-              <p class="index-price">¥80000.00</p>
-              <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-            </li>
-            <li>
-              <p class="u-yuming jm-1b">zzjghj.com</p>
-              <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-              <p class="index-price">¥80000.00</p>
-              <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-            </li>
-            <li>
-              <p class="u-yuming jm-1b">zzjghj.com</p>
-              <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-              <p class="index-price">¥80000.00</p>
-              <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-            </li>
-            <div class="clear"></div>
-          </ul>
-        </div>
-      </div>
-
-      <!--banner-->
-      <div class="banner">
-        <img src="./images/mibiao2_06.png" alt="banner" class="img-responsive">
-      </div>
-      <!--banner-->
-
-      <!--        精选域名-->
-      <div class="yzym_left fl">
-        <div class="column">
-          <h2 class="hd  fl">精选域名</h2>
-          <a href="#" class="more fr">更多+</a>
-          <div class="clear"></div>
-        </div>
-
-        <div class="tab_box">
-          <ul class="tab-title">
-            <li class="active"><a href="javascript:;">数字域名</a></li>
-            <li><a href="javascript:;">字母域名</a></li>
-            <li><a href="javascript:;">拼音域名</a></li>
-            <li><a href="javascript:;">杂米域名</a></li>
-            <li><a href="javascript:;">中文域名</a></li>
-            <div class="clear"></div>
-          </ul>
-          <div class="tab-item" style="display: block;">
-            <div class="yzym-item">
-              <ul class="yzym-list">
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <div class="clear"></div>
-              </ul>
+      <!-- 推荐域名-->
+      <div class="recommend wow fadeInUp" >
+        <div class="swiper-container4 ov" >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class=" _li">
+                  <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+                  <p class="_1 font12 ellipsis cl-gray">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+                  <p class="_3 bold">价格：￥100</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class=" _li">
+                <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+                <p class="_1 font12 ellipsis cl-gray">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+                <p class="_3 bold">价格：￥100</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class=" _li">
+                <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+                <p class="_1 font12 ellipsis cl-gray">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+                <p class="_3 bold">价格：￥100</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class=" _li">
+                <div class="_0"><p class="font18">gsszxrw.cn</p><i class="iconfont icon-xiangyoujiantou" ></i></div>
+                <p class="_1 font12 ellipsis cl-gray">广州寻人网 贵州寻人网 广州晓润网络科技有限公司</p>
+                <p class="_3 bold">价格：￥100</p>
+              </a>
             </div>
           </div>
-          <div class="tab-item">
-            <div class="yzym-item">
-              <ul class="yzym-list">
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <div class="clear"></div>
-              </ul>
-            </div>
-          </div>
-          <div class="tab-item">
-            <div class="yzym-item">
-              <ul class="yzym-list">
-                <li>
-                  <p class="u-yuming jm-1b">11zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <div class="clear"></div>
-              </ul>
-            </div>
-          </div>
-
-          <div class="tab-item">
-            <div class="yzym-item">
-              <ul class="yzym-list">
-                <li>
-                  <p class="u-yuming jm-1b">sdzzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">22zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <div class="clear"></div>
-              </ul>
-            </div>
-          </div>
-          <div class="tab-item">
-            <div class="yzym-item">
-              <ul class="yzym-list">
-                <li>
-                  <p class="u-yuming jm-1b">222zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <li>
-                  <p class="u-yuming jm-1b">zzjghj.com</p>
-                  <p class="t-yuming jm-33">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p>
-                  <p class="index-price">¥80000.00</p>
-                  <a href="javascript:;" target="_blank" class="buy-btn">点击购买</a>
-                </li>
-                <div class="clear"></div>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--最近成交-->
-      <div class="yzym_left mt20">
-        <div class="column">
-          <h2 class="hd  fl">最近成交</h2>
-          <a href="#" class="more fr">更多+</a>
-          <div class="clear"></div>
-        </div>
-
-        <div class="deal-item">
-          <ul class="deal-list">
-            <li><a href="javascript:;">
-              <p class="deal-yuming jm-1b">zzjghj.com</p>
-              <span class="deal-btn">￥保密</span>
-            </a>
-            </li>
-            <li><a href="javascript:;">
-              <p class="deal-yuming jm-1b">zzjghj.com</p>
-              <span class="deal-btn">￥保密</span>
-            </a>
-            </li>
-            <li><a href="javascript:;">
-              <p class="deal-yuming jm-1b">zzjghj.com</p>
-              <span class="deal-btn">￥保密</span>
-            </a>
-            </li>
-            <li><a href="javascript:;">
-              <p class="deal-yuming jm-1b">zzjghj.com</p>
-              <span class="deal-btn">￥保密</span>
-            </a>
-            </li>
-            <li><a href="javascript:;">
-              <p class="deal-yuming jm-1b">zzjghj.com</p>
-              <span class="deal-btn">￥保密</span>
-            </a>
-            </li>
-            <li><a href="javascript:;">
-              <p class="deal-yuming jm-1b">zzjghj.com</p>
-              <span class="deal-btn">￥保密</span>
-            </a>
-            </li>
-
-            <div class="clear"></div>
-          </ul>
+          <!-- Add Pagination -->
+          <div class="swiper-button-next btn-next2"></div>
+          <div class="swiper-button-prev btn-prev2" ></div>
         </div>
       </div>
 
       <!--交易流程-->
-      <div class="yzym_left fl mt20">
-        <div class="column">
-          <h2 class="fl">交易流程</h2>
-          <a href="#" class="more fr">更多+</a>
-          <div class="clear"></div>
+    <div class="yzym_left  mt20 ">
+        <div class="column _0">
+          <h2 class="_h2 bold">交易流程 <span></span></h2>
         </div>
 
         <div class="process-item">
           <ul class="process-list">
-            <li class="on">
-              <p class="i_bg"><i class="iconfont icon-shaixuan1"></i> </p>
-              <p class="pro-tit">挑选域名</p>
-              <p class="pro-num">01</p>
+            <li>
+              <img src="../images/index03_04.png" alt="" class="i_bg">
+              <p class="pro-tit">01 挑选域名</p>
+            </li>
+            <li>
+              <img src="../images/index03_06.png" alt="" class="i_bg">
+              <p class="pro-tit">02 联系卖家</p>
             </li>
             <li class="on">
-              <p class="i_bg"><i class="iconfont icon-dianhua"></i> </p>
-              <p class="pro-tit">联系卖家</p>
-              <p class="pro-num">02</p>
+              <img src="../images/index03_08.png" alt="" class="i_bg">
+              <p class="pro-tit">03 发起担保</p>
             </li>
             <li class="on">
-              <p class="i_bg"><i class="iconfont icon-baohu"></i> </p>
-              <p class="pro-tit">发起担保</p>
-              <p class="pro-num">03</p>
+              <img src="../images/index03_10.png" alt="" class="i_bg">
+              <p class="pro-tit">04 支付费用</p>
             </li>
             <li class="on">
-              <p class="i_bg"><i class="iconfont icon-qianbao2" style="font-size: 26px;"></i> </p>
-              <p class="pro-tit">支付费用</p>
-              <p class="pro-num">04</p>
+              <img src="../images/index03_12.png" alt="" class="i_bg">
+              <p class="pro-tit">05 过户域名</p>
             </li>
             <li class="on">
-              <p class="i_bg"><i class="iconfont icon-plus-transfer"></i> </p>
-              <p class="pro-tit">过户域名</p>
-              <p class="pro-num">05</p>
+              <img src="../images/index03_14.png" alt="" class="i_bg">
+              <p class="pro-tit">06 完成交易</p>
             </li>
-            <li class="on">
-              <p class="i_bg"><i class="iconfont icon-tijiao" ></i> </p>
-              <p class="pro-tit">完成交易</p>
-              <p class="pro-num">06</p>
-            </li>
-
-            <div class="clear"></div>
-          </ul>
-        </div>
-      </div>
-
-
-      <!-- 新闻资讯-->
-      <div class="yzym_left fl mt20">
-        <div class="column">
-          <h2 class="hd  fl">新闻资讯</h2>
-          <a href="#" class="more fr">更多+</a>
-          <div class="clear"></div>
-        </div>
-
-        <div class="news-item">
-          <ul class="news-list">
-            <li><a href="javascript:;">
-              <img src="http://placehold.jp/99ccff/003366/110x78.png" alt="焦点图" class="img-responsive fl">
-              <div class="fr _new-right">
-                <p class="news-tit">全球域名报告发布 中文域名继续领跑</p>
-                <p class="news-deccribe">4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿个</p>
-              <p class="news-time ">2019-6-12</p>
-              </div>
-              </a></li>
-            <li><a href="javascript:;">
-              <img src="http://placehold.jp/99ccff/003366/110x78.png" alt="焦点图" class="img-responsive fl">
-              <div class="fr _new-right">
-                <p class="news-tit">全球域名报告发布 中文域名继续领跑</p>
-                <p class="news-deccribe">4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿个</p>
-                <p class="news-time ">2019-6-12</p>
-              </div>
-            </a></li>
-            <li><a href="javascript:;">
-              <img src="http://placehold.it/110x75/000000/ffffff" alt="焦点图" class="img-responsive fl">
-              <div class="fr _new-right">
-                <p class="news-tit">全球域名报告发布 中文域名继续领跑</p>
-                <p class="news-deccribe">4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿个</p>
-                <p class="news-time ">2019-6-12</p>
-              </div>
-            </a></li>
 
             <div class="clear"></div>
           </ul>
@@ -584,15 +183,159 @@
       </div>
 
     </div>
-    <!--content结束-->
+    <!--推荐域名end-->
+  </div>
 
-    <!--    底部开始-->
-    <footer class="fl mt20">
-      <div class="container">
-      <!--  友情链接 -->
-        <div class="_foot fl">
-        <ul class="_footul">
-          <p class="fl color_9 font12">友情链接:</p>
+<!--精品域名-->
+<div class="layout">
+  <div class="w1200 auto0 _indexbox1">
+    <div class="yzym_left mt20" >
+      <div class="column _0">
+        <h2 class="_h2 bold">精品域名 <span></span></h2>
+      </div>
+
+      <div class="yzym-item">
+        <ul class="yzym-list">
+          <li>
+            <div class="_1 fl">
+              <p class="u-yuming ">zzjghj.com</p>
+              <p class="t-yuming color_9">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p></div>
+            <div class="_2 fr te-r">
+              <p class="color_9 font14">价格:</p>
+              <p class="color_3 font14 bold">¥80000.00</p>
+            </div>
+          </li>
+          <li>
+            <div class="_1 fl">
+              <p class="u-yuming ">2zzjghj.com</p>
+              <p class="t-yuming color_9">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p></div>
+            <div class="_2 fr te-r">
+              <p class="color_9 font14">价格:</p>
+              <p class="color_3 font14 bold">¥80000.00</p>
+            </div>
+          </li>
+          <li>
+            <div class="_1 fl">
+              <p class="u-yuming ">3zzjghj.com</p>
+              <p class="t-yuming color_9">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p></div>
+            <div class="_2 fr te-r">
+              <p class="color_9 font14">价格:</p>
+              <p class="color_3 font14 bold">¥80000.00</p>
+            </div>
+          </li>
+          <li>
+            <div class="_1 fl">
+              <p class="u-yuming ">4zzjghj.com</p>
+              <p class="t-yuming color_9">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p></div>
+            <div class="_2 fr te-r">
+              <p class="color_9 font14">价格:</p>
+              <p class="color_3 font14 bold">¥80000.00</p>
+            </div>
+          </li>
+          <li>
+            <div class="_1 fl">
+              <p class="u-yuming ">5zzjghj.com</p>
+              <p class="t-yuming color_9">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p></div>
+            <div class="_2 fr te-r">
+              <p class="color_9 font14">价格:</p>
+              <p class="color_3 font14 bold">¥80000.00</p>
+            </div>
+          </li>
+          <li>
+            <div class="_1 fl">
+              <p class="u-yuming ">6zzjghj.com</p>
+              <p class="t-yuming color_9">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p></div>
+            <div class="_2 fr te-r">
+              <p class="color_9 font14">价格:</p>
+              <p class="color_3 font14 bold">¥80000.00</p>
+            </div>
+          </li>
+          <li>
+            <div class="_1 fl">
+              <p class="u-yuming">7zzjghj.com</p>
+              <p class="t-yuming color_9">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p></div>
+            <div class="_2 fr te-r">
+              <p class="color_9 font14">价格:</p>
+              <p class="color_3 font14 bold">¥80000.00</p>
+            </div>
+          </li>
+          <li>
+            <div class="_1 fl">
+              <p class="u-yuming">8zzjghj.com</p>
+              <p class="t-yuming color_9">独立备案 360 QQ 微信均无拦截 聚名独家每天抢注四五六短备案域名 请务必收藏店铺</p></div>
+            <div class="_2 fr te-r">
+              <p class="color_9 font14">价格:</p>
+              <p class="color_3 font14 bold">¥80000.00</p>
+            </div>
+          </li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--精品域名end-->
+
+<!-- 新闻资讯start-->
+<div class="layout bg-white ov mt40">
+  <div class="w1200 auto0">
+      <div class="_indexbox2  mt20 fl">
+        <div class="column _0">
+          <h2 class="_h2 bold fl">新闻资讯 <span></span></h2>
+          <a href="#" class="more fr color_9">更多</a>
+          <div class="clear"></div>
+        </div>
+        <div class="news-item ">
+          <ul class="news-list">
+            <li class="on"><a href="javascript:;">
+              <div class="fr _new-right">
+                <p class="news-tit font14 bold">全球域名报告发布 中文域名继续领跑</p>
+                <p class="news-deccribe font12">4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿总量已经达到3.57总量已经达到3.57个</p>
+              </div>
+              </a></li>
+            <li><a href="javascript:;">
+              <div class="fr _new-right">
+                <p class="news-tit font14 bold">全球域名报告发布 中文域名继续领跑</p>
+                <p class="news-deccribe font12">4月18日，第三届中文域名创新应用论坛在北京召开。论坛发布了最新的《全球域名发展统计报告》。报告显示，截至2018年底全球域名总量已经达到3.57亿总量已经达到3.57总量已经达到3.57个</p>
+              </div>
+            </a></li>
+
+            <div class="clear"></div>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="mt20 _indexbox3 fr">
+        <div class="column _0">
+          <h2 class="_h2 bold fl">成交案例 <span></span></h2>
+          <a href="#" class="more fr cl-gray" >更多</a>
+          <div class="clear"></div>
+        </div>
+
+        <div class="case">
+          <a href="javascript:;" class="_a on">zhuangbei8.com</a>
+          <a href="javascript:;"  class="_a">zhuan8.com</a>
+          <a href="javascript:;"  class="_a">zhuangei8.com</a>
+          <a href="javascript:;" class="_a">zgbei8.com</a>
+          <a href="javascript:;" class="_a">zhuangbei8.com</a>
+          <a href="javascript:;" class="_a">zhuang8.com</a>
+          <a href="javascript:;" class="_a">zhuang8.com</a>
+          <a href="javascript:;" class="_a">zhuang8.com</a>
+          <a href="javascript:;" class="_a">zhuang8.com</a>
+          <a href="javascript:;" class="_a">zhuang8.com</a>
+        </div>
+
+       </div>
+  </div>
+  <!--新闻资讯end-->
+</div>
+
+<!--友情链接-->
+<div class="layout w100 yl_col">
+<div class="w1200 auto0">
+        <h2 class="fl">友情链接:</h2>
+        <ul class="yl_list fl">
           <li><a href="javascript:;">聚名网</a></li>
           <li><a href="javascript:;">金米网</a></li>
           <li><a href="javascript:;">玩米网</a></li>
@@ -602,17 +345,20 @@
           <li><a href="javascript:;">域铺</a></li>
           <li><a href="javascript:;">阿里云</a></li>
           <li><a href="javascript:;">聚名科技</a></li>
-          <div class="clear"></div>
         </ul>
-        </div>
-      <p>版权所有：www.Juming.Com　备案号：皖ICP备12013812号 皖公网安备 34010302000199号</p>
-      <p>Copyright @ 2008-2019 聚名网 Limited, All Rights Reserved</p>
-      <p class="mt20">本站由 聚米网 www.jumi.com 强力驱动 <a href="javascript:;">米表管理入口</a> <a href="javascript:;">备案查询</a> <a
-          href="javascript:;">网站建设</a> <a href="javascript:;">查看手机版</a> </p>
-      </div>
-    </footer>
+        <div class="clear"></div>
+</div>
+</div>
 
+<!--#endregion content结束-->
+<!--    底部开始-->
+<footer class="fl">
+  <div class="container">
+    <p>版权所有：www.Juming.Com　备案号：皖ICP备12013812号 皖公网安备 34010302000199号 Copyright @ 2008-2019 聚名网 Limited, All Rights Reserved</p>
+    <p class="mt20">本站由 聚米网 www.jumi.com 强力驱动 <a href="javascript:;">米表管理入口</a> <a href="javascript:;">备案查询</a> <a
+      href="javascript:;">网站建设</a> <a href="javascript:;">查看手机版</a> </p>
   </div>
+</footer>
 
   <!--右侧悬浮框-->
   <div id="toolbar" class="toolbar">
@@ -641,14 +387,30 @@
 
 
   <script>
+    // benner轮播图
+    var swiper = new Swiper('.swiper-container', {
+      autoplay:true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 
-    $('.head-sec').click(function(){//点击a标签
-      if($('.nav-down').is(':hidden')){//如果当前隐藏
-        $('.nav-down').show();//那么就显示div
-      }else{//否则
-        $('.nav-down').hide();//就隐藏div
-      }
-    })
+
+    // 推荐域名
+    var swiper = new Swiper('.swiper-container4', {
+      slidesPerView: 4,
+      spaceBetween:70,
+      slidesPerGroup:4,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay:false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
 
 
     $('.tab-title li').mousemove(function () {
