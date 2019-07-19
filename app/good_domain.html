@@ -23,19 +23,29 @@
   <!--    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1233831_qg93zuj95cl.css">-->
 </head>
 <body class="theme-green">
-<div class="layout" style="background-color: #fff">
+<div class="layout bg-white _all-domain"  >
   <div class="container">
     <div id="jm-head">
       <div class="head-box" >
         <div id="logo" class=""><a href="index.html" title="米表"><img src="./images/logo.png" alt="logo" title="米表" class="fl"></a></div>
-        <div class="fr">
+        <div class="fr _4 wow slideInRight">
           <form action="/hao/" method="get" id="search-form" target="_blank">
             <div class="head-search fl">
-              <i class="iconfont icon-xiazai17 _i"></i>
-              <input class="search-box fl domain" type="text" placeholder="" name="cha_ym"
-                     style="display: block;">
+              <div class="head-sec fl">
+                <span>淘域名</span>
+                <div class="nav-down" style="display: none;">
+                  <ul>
+                    <li onclick="changeSubmitUrl('domain','search-form',this,'/hao/');">查域名</li>
+                    <li onclick="changeSubmitUrl('whois','search-form',this,'http://whois.juming.com/');">查whois</li>
+                  </ul>
+                </div>
+              </div>
+
+              <input class="search-box fl domain " type="text" placeholder="请输入域名关键字" name="cha_ym" style="display: block;">
+              <button class="ajax-submit fl" type="submit"> <i class="iconfont icon-xiazai17"></i></button>
             </div>
           </form>
+          <i class="iconfont icon-xiazai17 _i tc bold"></i>
         </div>
         <!--导航-->
         <div id="nav" class="fr">
@@ -43,7 +53,7 @@
             <ul>
               <li class="fl"><a href="index.html">网站首页</a></li>
               <li class="fl"><a href="all_domain.html" target="_self">所有域名</a></li>
-              <li class="fl"><a href="good_domain.html" target="_self" class="on">推荐域名</a></li>
+              <li class="fl"><a href="good_domain.html" target="_self"  class="on" >推荐域名</a></li>
               <li class="fl"><a href="news_list.html" target="_self">新闻资讯</a></li>
               <li class="fl"><a href="contactus.html" target="_self"  >联系我们</a></li>
               <div class="clear"></div>
@@ -57,7 +67,6 @@
     </div>
   </div>
 </div>
-
 
 <div class="w1200 auto0 cont-gooddomain">
   <div class="layui-row">
@@ -184,6 +193,20 @@
 
 
   <script src="scripts/main.js"></script>
+<script>
+  $('._all-domain ._i').click(function(){//点击a标签
+    $("#search-form").animate({width:'260px'});    //那么就显示div
+    $('._all-domain ._i').hide();//就隐藏div
+  });
+
+  $('.head-sec').click(function(){//点击a标签
+    if($('.nav-down').is(':hidden')){//如果当前隐藏
+      $('.nav-down').show();//那么就显示div
+    }else{//否则
+      $('.nav-down').hide();//就隐藏div
+    }
+  });
+</script>
   <script>
     $(function () {
       layui.use('form', function () {

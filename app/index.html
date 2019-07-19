@@ -56,11 +56,21 @@
         <div class="fr _4 wow slideInRight">
           <form action="/hao/" method="get" id="search-form" target="_blank">
             <div class="head-search fl">
-              <i class="iconfont icon-xiazai17 _i"></i>
-              <input class="search-box fl domain" type="text" placeholder="" name="cha_ym"
-                     style="display: block;">
+              <div class="head-sec fl">
+                <span>淘域名</span>
+                <div class="nav-down" style="display: none;">
+                  <ul>
+                    <li onclick="changeSubmitUrl('domain','search-form',this,'/hao/');">查域名</li>
+                    <li onclick="changeSubmitUrl('whois','search-form',this,'http://whois.juming.com/');">查whois</li>
+                  </ul>
+                </div>
+              </div>
+
+              <input class="search-box fl domain " type="text" placeholder="请输入域名关键字" name="cha_ym" style="display: block;">
+              <button class="ajax-submit fl" type="submit"> <i class="iconfont icon-xiazai17"></i></button>
             </div>
           </form>
+          <i class="iconfont icon-xiazai17 _i tc bold"></i>
         </div>
         <!--导航-->
         <div id="nav" class="fr _3 wow slideInRight">
@@ -89,13 +99,10 @@
     <div class="swiper-slide">
       <img src="./images/index03_01.png" alt="" class="img-responsive">
     </div>
-    <div class="swiper-slide">
-      <img src="./images/index03_01.png" alt="" class="img-responsive">
-    </div>
   </div>
   <!-- Add Arrows -->
-  <div class="swiper-button-next btn-next1"></div>
-  <div class="swiper-button-prev btn-prev1"></div>
+<!--  <div class="swiper-button-next btn-next1"></div>-->
+<!--  <div class="swiper-button-prev btn-prev1"></div>-->
 </div>
 
 <!--banner-->
@@ -387,14 +394,26 @@
 
 
   <script>
-    // benner轮播图
-    var swiper = new Swiper('.swiper-container', {
-      autoplay:true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+    $('._index ._i').click(function(){//点击a标签
+        $("#search-form").animate({width:'260px'});    //那么就显示div
+        $('._index ._i').hide();//就隐藏div
     });
+
+    $('.head-sec').click(function(){//点击a标签
+      if($('.nav-down').is(':hidden')){//如果当前隐藏
+        $('.nav-down').show();//那么就显示div
+      }else{//否则
+        $('.nav-down').hide();//就隐藏div
+      }
+    });
+    // benner轮播图
+    // var swiper = new Swiper('.swiper-container', {
+    //   autoplay:true,
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
+    // });
 
 
     // 推荐域名

@@ -21,6 +21,7 @@ $cl-fontgray: #999999;
 // }
 body {
   background-color: #f7f7f7;
+  font-family: 微软雅黑;
 }
 
 // layui overrides
@@ -72,7 +73,7 @@ body {
   .tab-title li.active a, .tab-title li:hover a, .cont-domain_sell ._box1 ._box1-i ._flex-wra ._i:hover ._cir{
     background-color: $cl-blue;
   }
-  .ajax-submit,.selected-list li:hover .buy-btn-selected{
+  .selected-list li:hover .buy-btn-selected{
     background-color: $cl-oran;
   }
   //.navbar li .on, .navbar li a:hover{
@@ -87,7 +88,7 @@ body {
   }
 
   .cont-domain_detail  ._box-l   ._box-l0 a:hover{
-    color: $cl-blue;
+    //color: $cl-blue;
   }
 
   .cont-alldomain,.cont-gooddomain {
@@ -127,31 +128,102 @@ body {
 }
 
 
-//头部
-#search-form{
-  height: 40px;
-  line-height: 40px;
-
-  .head-search{
-    position: relative;
-    ._i{
-      font-weight: bold;
-      position: absolute;
-    }
-    .search-box{
-      line-height: 40px;
-      width:50px;
-      padding-left: 20px;
-border: none;
-    }
-  }
-}
-
-
 //首页
 
 ._index{
   height: 400px;
+
+  .head-search {
+    width: 176px;
+  }
+
+  #search-form {
+    float: left;
+    width: 0px;
+    overflow: hidden;
+  }
+
+  .head-search {
+    width: 260px;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+    position: relative;
+    border: solid 1px #e5e5e5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .head-sec {
+    position: relative;
+    width: 85px;
+    height: 38px;
+    background:    url(../images/select.png) no-repeat right 10px center;
+    background-size: 20% auto;
+    color: #fff;
+    text-indent: 16px;
+    z-index: 999999;
+    zoom: 1;
+
+  }
+  input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: #999;
+  }
+  .head-sec span {
+    cursor: pointer;
+  }
+
+  .head-sec .on {
+    color: #ff8c19;
+  }
+
+  .nav-down {
+    display: none;
+    position: absolute;
+    width: 85px;
+    top: 40px;
+    left: 0;
+    background-color: #f2f2f2;
+    z-index: 999999;
+  }
+
+  .ajax-submit {
+    width: 35px;
+    height: 38px;
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    right:0px;
+    border: none;
+    color: $cl-oran;
+    cursor: pointer;
+    background: none;
+    i {
+      font-weight: bold;
+    }
+  }
+  ._i{
+    color: #fff;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    transition: 0.5s all;
+  }
+  .search-box {
+    width: 172px;
+    /* height: 38px; */
+    background-color: #fff;
+    line-height: 20px;
+    text-indent: 9px;
+    margin-top: 9px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    border-left: 1px solid #fff;
+  }
   ._1{
     top: 0;
     left: 0;
@@ -174,6 +246,100 @@ border: none;
     }
   }
 }
+
+._all-domain{
+  .head-search {
+    width: 176px;
+  }
+  #search-form {
+    float: left;
+    width: 0px;
+    overflow: hidden;
+  }
+
+  .head-search {
+    width: 260px;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+    position: relative;
+    border: solid 1px #e5e5e5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .head-sec {
+    position: relative;
+    width: 85px;
+    height: 38px;
+    background:    url(../images/select2.png) no-repeat right 10px center;
+    background-size: 20% auto;
+    color: #333;
+    text-indent: 16px;
+    z-index: 999999;
+    zoom: 1;
+
+  }
+  input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: #333;
+  }
+  .head-sec span {
+    cursor: pointer;
+  }
+
+  .head-sec .on {
+    color: #ff8c19;
+  }
+
+  .nav-down {
+    display: none;
+    position: absolute;
+    width: 85px;
+    top: 40px;
+    left: 0;
+    background-color: #f2f2f2;
+    z-index: 999999;
+  }
+
+  .ajax-submit {
+    width: 35px;
+    height: 38px;
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    right:0px;
+    border: none;
+    color: $cl-oran;
+    cursor: pointer;
+    background: none;
+    i {
+      font-weight: bold;
+    }
+  }
+  ._i{
+    color: #333;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    transition: 0.5s all;
+  }
+  .search-box {
+    width: 172px;
+    /* height: 38px; */
+    background-color: #fff;
+    line-height: 20px;
+    text-indent: 9px;
+    margin-top: 9px;
+    color: #333;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    border-left: 1px solid #e5e5e5;
+  }
+}
+
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
@@ -626,7 +792,7 @@ width: 27%;
           line-height: 2;
           i{
             color: #333;
-            margin-left:60px;
+            margin-left:30px;
           }
           p {
             display: inline-block;
@@ -855,29 +1021,57 @@ padding: 0 30px;
 }
 
 .cont-domain_detail {
+  ._i-blue {
+    margin-right: 5px;
+    margin-top: 2px;
+    color: $cl-oran;
+  }
   ._box-l {
     background: none;
-    width: 900px;
     box-sizing: border-box;
 
     ._box-l0 {
       background-color: #fff;
-      ._a_detail,._a_detail2{
-         padding-left: 10px;
-         padding-right: 10px;
-       }
-      & :hover{
-        color: $cl-blue;
+      ._box-10-1{
+        padding-bottom:40px;
+        border-bottom: 1px solid #f7f7f7;
+      ._b {
+        color: $cl-oran;
+        font-size: 36px;
       }
-      ._a_detail2{
-        border-left: 1px solid #999;
-        border-right:1px solid #999;
+
+      ._a_detail, ._a_detail2 {
+        border: solid 1px #e5e5e5;
+        padding: 8px 20px;
+      }
+
+      ._a_detail {
+        margin-right: 15px;
+        margin-left: 50px;
+      }
+
+      ._a_detail3 {
+        background-color: $cl-oran;
+        color: #fff;
+        padding: 13px 40px;
+      }
+    }
+      .layui-form-label{
+        padding: 9px 0px;
+        padding-right: 15px;
+      }
+      .layui-form-item {
+        margin-bottom: 0px;
       }
     }
 
     ._box-l1 {
       background-color: #fff;
-
+      width: 50%;
+      .column{
+        border-bottom: 1px solid #f7f7f7;
+        padding-bottom: 20px;
+      }
       ._form0 {
         .layui-icon {
           color: #999;
@@ -886,12 +1080,15 @@ padding: 0 30px;
         .layui-form-label {
           color: #999;
         }
+
+        .layui-form-label {
+          width: 60px;
+          border: none;
+          background: none;
+          color: #333;
+        }
       }
 
-      // overrides
-      .layui-form-pane .layui-form-label {
-        width: 50px;
-      }
 
       .layui-inline {
         margin-top: 10px;
@@ -913,36 +1110,83 @@ padding: 0 30px;
       }
 
       textarea {
-        width: 87.5%;
+        width:70%;
       }
 
       ._sub {
-        margin-right: 44px;
+       background-color: $cl-oran;
+        border: none;
+        color: #fff;
+        width: 180px;
+        margin-left: 60px;
       }
     }
-  }
 
-  ._box-r {
-    width: 280px;
-    margin-left: 20px;
-    background-color: #fff;
-
-    .yzym-list {
-      li {
-        width: 100%;
-
-        .index-price {
-          transition: 0.5s;
-        }
-
-        &:hover {
-          background-color: $cl-gray;
-        }
+    ._box-r {
+      width:50%;
+      padding-left: 20px;
+      background-color: #fff;
+      .column{
+        border-bottom: 1px solid #f7f7f7;
+        padding-bottom: 20px;
       }
+      ._table {
+        ._li {
+          width: 50%;
+          padding:20px 30px;
+          float: left;
+          box-sizing: border-box;
+          border-bottom: 1px solid #f7f7f7;
+
+          ._0 {
+            line-height: 2;
+            i{
+              color: #333;
+              margin-left:60px;
+            }
+            p {
+              display: inline-block;
+              font-weight: bold;
+              color: #333;
+
+            }
+          }
+
+          ._1 p {
+            display: block;
+          }
+          ._2 {
+            ._2-1,._2-2 {
+              display: inline-block;
+              line-height: 2;
+            }
+            ._2-2 {
+              margin-left:30px;
+            }
+          }
+          ._3{
+            line-height: 2;
+            font {
+              color: $cl-oran;
+            }
+          }
+          &:hover{
+            ._0 {
+              i{color: $cl-oran;}p {color: $cl-oran; }
+            }
+          }
+        }
+
+      }
+
     }
+
   }
+
+
 
 }
+
 
 
 .u-box ._cont h3 {
@@ -1118,7 +1362,7 @@ padding: 0 30px;
         margin: 0 10px;
         color: #333;
         font-size: 14px;
-
+        font-weight: bold;
         &:hover {
           color: $cl-oran;
         }
