@@ -70,7 +70,9 @@
               <button class="ajax-submit fl" type="submit"> <i class="iconfont icon-xiazai17"></i></button>
             </div>
           </form>
+
           <i class="iconfont icon-xiazai17 _i tc bold"></i>
+
         </div>
         <!--导航-->
         <div id="nav" class="fr _3 wow slideInRight">
@@ -395,10 +397,12 @@
 
   <script>
     $('._index ._i').click(function(){//点击a标签
-        $("#search-form").animate({width:'260px'});    //那么就显示div
+      if($('.head-search').is(':hidden')){//如果当前隐藏
+        $('.head-search').show();//那么就显示div
+        $(".head-search").animate({width:'260px'});    //那么就显示div
         $('._index ._i').hide();//就隐藏div
-    });
-
+    }}
+    );
     $('.head-sec').click(function(){//点击a标签
       if($('.nav-down').is(':hidden')){//如果当前隐藏
         $('.nav-down').show();//那么就显示div

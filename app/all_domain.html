@@ -322,11 +322,14 @@
 
 
   <script>
-    $('._all-domain ._i').click(function(){//点击a标签
-      $("#search-form").animate({width:'260px'});    //那么就显示div
-      $('._all-domain ._i').hide();//就隐藏div
-    });
 
+    $('._all-domain ._i').click(function(){//点击a标签
+      if($('.head-search').is(':hidden')){//如果当前隐藏
+        $('.head-search').show();//那么就显示div
+        $(".head-search").animate({width:'260px'});    //那么就显示div
+        $('._all-domain ._i').hide();//就隐藏div
+      }}
+    );
     $('.head-sec').click(function(){//点击a标签
       if($('.nav-down').is(':hidden')){//如果当前隐藏
         $('.nav-down').show();//那么就显示div

@@ -134,17 +134,9 @@ body {
   height: 400px;
 
   .head-search {
-    width: 176px;
-  }
-
-  #search-form {
     float: left;
     width: 0px;
-    overflow: hidden;
-  }
-
-  .head-search {
-    width: 260px;
+    display: none;
     height: 40px;
     line-height: 36px;
     border-radius: 4px 0 0 4px;
@@ -165,18 +157,17 @@ body {
     text-indent: 16px;
     z-index: 999999;
     zoom: 1;
+    span {
+      cursor: pointer;
+    }
+    .on {
+      color: #ff8c19;
+    }
 
   }
   input::-webkit-input-placeholder {
     /* placeholder颜色  */
     color: #999;
-  }
-  .head-sec span {
-    cursor: pointer;
-  }
-
-  .head-sec .on {
-    color: #ff8c19;
   }
 
   .nav-down {
@@ -185,7 +176,7 @@ body {
     width: 85px;
     top: 40px;
     left: 0;
-    background-color: #f2f2f2;
+    background-color: rgba(255,255,255,0.4);
     z-index: 999999;
   }
 
@@ -248,17 +239,11 @@ body {
 }
 
 ._all-domain{
-  .head-search {
-    width: 176px;
-  }
-  #search-form {
-    float: left;
-    width: 0px;
-    overflow: hidden;
-  }
 
   .head-search {
-    width: 260px;
+    float: left;
+    width: 0px;
+    display: none;
     height: 40px;
     line-height: 36px;
     border-radius: 4px 0 0 4px;
