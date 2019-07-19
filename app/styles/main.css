@@ -1503,3 +1503,18 @@ footer a {
   background-position: 0 0;
   z-index: 100;
 }
+
+._empty {
+  width: 200px;
+  margin: 50px auto;
+  padding-top: 50px;
+}
+
+._empty ._img {
+  width: 100%;
+  height: auto;
+}
+
+._empty ._p {
+  margin: 20px;
+}
