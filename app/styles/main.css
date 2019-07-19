@@ -387,17 +387,26 @@ body {
 
 .recommend .swiper-slide ._li ._0 {
   line-height: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .recommend .swiper-slide ._li ._0 i {
   color: #333;
-  margin-left: 60px;
+  margin-left: 45px;
 }
 
 .recommend .swiper-slide ._li ._0 p {
   display: inline-block;
   font-weight: bold;
   color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .recommend .swiper-slide ._li ._1 p {
